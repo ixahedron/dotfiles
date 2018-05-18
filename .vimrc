@@ -16,3 +16,6 @@ filetype on
 
 set pastetoggle=<Leader>v
 cmap w!! w !sudo tee > /dev/null %
+
+autocmd BufWritePre *.hs :%s/\s\+$//e
+autocmd BufWritePre *.nix :%s/\s\+$//e

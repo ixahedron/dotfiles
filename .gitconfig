@@ -1,3 +1,11 @@
+[core]
+	editor = vim
+	autocrlf = input
 [user]
 	email = ixahedron@users.noreply.github.com
-	name = Ilona Prikule
+	name = Ilona
+[push]
+	default = simple
+[alias]
+  uncommit = reset HEAD^
+	unamend = reset --soft HEAD@{1}
