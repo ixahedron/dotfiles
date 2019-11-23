@@ -18,4 +18,15 @@ set pastetoggle=<Leader>v
 cmap w!! w !sudo tee > /dev/null %
 
 autocmd BufWritePre *.hs :%s/\s\+$//e
+autocmd BufWritePre *.py :%s/\s\+$//e
 autocmd BufWritePre *.nix :%s/\s\+$//e
+
+autocmd BufRead,BufEnter ~/Dcuments/icfpc*tbd*/*py setlocal expandtab tabstop=4 shiftwidth=4
+autocmd FileType make setlocal noexpandtab shiftwidth=4 softtabstop=0
+
+augroup vimrc_todo
+    au!
+    au Syntax * syn match MyTodo /<(FIXME|NOTE|TODO|OPTIMIZE|XXX)/
+          \ containedin=.*Comment,vimCommentTitle
+augroup END
+hi def link MyTodo Todo
