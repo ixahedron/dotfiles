@@ -1,7 +1,8 @@
 :set prompt "λ> "
 
-:def hoogle \x -> return $ ":!hoogle \"" ++ x ++ "\""
-:def doc \x -> return $ ":!hoogle --info \"" ++ x ++ "\""
+import Prelude((++), return)
+
+:def hoogle \x -> return (":!hoogle \"" ++ x ++ "\"")
+:def doc \x -> return (":!hoogle --info \"" ++ x ++ "\"")
 
 :module +
-

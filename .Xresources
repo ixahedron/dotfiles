@@ -8,7 +8,7 @@ URxvt.scrollTtyOutput: false
 URxvt.scrollTtyKeypress: true
 
 ! extensions
-URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,resize-font
 ! clipboard
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste

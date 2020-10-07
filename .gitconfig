@@ -9,3 +9,7 @@
 [alias]
   uncommit = reset HEAD^
 	unamend = reset --soft HEAD@{1}
+[rebase]
+	autosquash = true
+[includeIf "gitdir:~/dev/serokell/"]
+  path = ~/.gitconfig-serokell
