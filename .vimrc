@@ -24,7 +24,10 @@ autocmd BufWritePre *.rs :%s/\s\+$//e
 
 autocmd BufRead,BufEnter ~/dev/randomhacks/icfpc*tbd*/*py setlocal expandtab tabstop=4 shiftwidth=4
 autocmd BufRead,BufEnter ~/dev/randomhacks/icfpc*tbd*/*rs setlocal expandtab tabstop=4 shiftwidth=4
+autocmd BufRead,BufEnter ~/dev/serokell/*/*hs setlocal expandtab cc=80 
 autocmd FileType make setlocal noexpandtab shiftwidth=4 softtabstop=0
+
+highlight ColorColumn ctermbg=0
 
 augroup vimrc_todo
     au!

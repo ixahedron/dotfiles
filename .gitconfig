@@ -13,3 +13,5 @@
 	autosquash = true
 [includeIf "gitdir:~/dev/serokell/"]
   path = ~/.gitconfig-serokell
+[init]
+	defaultBranch = master
