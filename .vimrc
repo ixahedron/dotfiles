@@ -8,7 +8,7 @@ set shiftwidth=2
 set backspace=2
 set expandtab
 
-colorscheme ron
+" colorscheme ron
 highlight LineNr ctermbg=237
 " highlight Comment ctermfg=32
 highlight Visual cterm=reverse ctermbg=black

@@ -6,12 +6,18 @@
 	name = Ilona
 [push]
 	default = simple
+  autoSetupRemote = true
 [alias]
   uncommit = reset HEAD^
 	unamend = reset --soft HEAD@{1}
 [rebase]
 	autosquash = true
+	autostash = true
 [includeIf "gitdir:~/dev/serokell/"]
   path = ~/.gitconfig-serokell
+[includeIf "gitdir:~/dev/yatima/"]
+  path = ~/.gitconfig-yatima
+[includeIf "gitdir:~/dev/lurk-lab/"]
+  path = ~/.gitconfig-lurk-lab
 [init]
 	defaultBranch = master
