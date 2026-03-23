@@ -1,6 +1,8 @@
 [core]
 	editor = vim
 	autocrlf = input
+	eol = lf
+	whitespace = cr-at-eol
 [user]
 	email = ixahedron@users.noreply.github.com
 	name = Ilona
@@ -19,5 +21,9 @@
   path = ~/.gitconfig-yatima
 [includeIf "gitdir:~/dev/lurk-lab/"]
   path = ~/.gitconfig-lurk-lab
+[includeIf "gitdir:~/dev/geosurge/"]
+  path = ~/.gitconfig-geosurge
 [init]
 	defaultBranch = master
+[rerere]
+	enabled = true
